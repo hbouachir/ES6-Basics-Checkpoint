@@ -7,7 +7,7 @@ var pets = [
 const getAge= (pet)=> new Date().getFullYear() - pet.bornOn;
 
 
-var petsWithAge = pets.map(p=>p.bornOn);
+var petsWithAge = pets.map(p=>p.age=getAge(p));
  
 console.log(petsWithAge);
 
