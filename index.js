@@ -4,9 +4,7 @@ var pets = [
   { name: `Jasper`, type: `dog`, bornOn: 2016 }
 ];
 
-const getAge= (pet)=>{
-  return new Date().getFullYear() - pet.bornOn;
-}
+const getAge= (pet)=> new Date().getFullYear() - pet.bornOn;
 
 
 var petsWithAge = pets.map(p=>p.bornOn);
